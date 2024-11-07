@@ -1,0 +1,11 @@
+@hostname=localhost
+@port=5102
+@Api_HostAddress=http://{{hostname}}:{{port}}
+
+POST {{Api_HostAddress}}/products
+Content-Type: application/json
+{
+  "name": "test",
+  "price": 1000,
+  "description": "test description"
+}
